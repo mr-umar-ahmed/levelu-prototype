@@ -1,22 +1,39 @@
-# Node modules
+# .gitignore
+
+# Node.js dependencies
 node_modules/
+npm-debug.log
+yarn-error.log
 
 # Environment variables
-.env*
-!.env.example
+.env
+.env.local
+.env.development
+.env.production
 
 # Build files
-client/build/
-server/dist/
+build/
+dist/
 
-# Logs
-logs/
-*.log
-
-# IDE files
+# IDEs and editors
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
-# OS-specific files
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Operating system files
 .DS_Store
 Thumbs.db
+
+# Test coverage
+coverage/
+
+# Firebase credentials
+firebase.json
+firestore.indexes.json
+firestore.rules
