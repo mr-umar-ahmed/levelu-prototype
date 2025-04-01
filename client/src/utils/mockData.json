@@ -1,0 +1,17 @@
+
+{
+    "tasks": [
+      { "id": 1, "title": "Read Chapter 1", "completed": true },
+      { "id": 2, "title": "Complete Assignment", "completed": false }
+    ],
+    "workouts": [
+      { "id": 1, "activity": "Running", "duration": 30, "caloriesBurned": 200 },
+      { "id": 2, "activity": "Cycling", "duration": 45, "caloriesBurned": 300 }
+    ],
+    "user": {
+      "name": "John Doe",
+      "level": 3,
+      "xp": 250,
+      "streak": 5
+    }
+  }

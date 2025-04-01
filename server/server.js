@@ -15,3 +15,11 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+const taskRoutes = require('./routes/taskRoutes');
+
+app.use('/api/tasks', taskRoutes);
+
+const { errorHandler } = require('./middleware/errorHandler');
+
+app.use(errorHandler);
