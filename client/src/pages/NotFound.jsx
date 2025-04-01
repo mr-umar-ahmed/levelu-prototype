@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const NotFound = () => {
   return (
     <div style={styles.container}>
-      <h1>Welcome to LevelUp Prototype</h1>
-      <p>Your personal productivity companion!</p>
-      <div>
-        <Link to="/login" style={styles.link}>Login</Link>
-        <Link to="/signup" style={styles.link}>Sign Up</Link>
-      </div>
+      <h1>404 - Page Not Found</h1>
+      <p>The page you are looking for does not exist.</p>
+      <Link to="/" style={styles.link}>Go Back to Home</Link>
     </div>
   );
 };
@@ -20,7 +17,6 @@ const styles = {
     marginTop: '50px',
   },
   link: {
-    margin: '10px',
     padding: '10px 20px',
     backgroundColor: '#007bff',
     color: '#fff',
@@ -29,4 +25,4 @@ const styles = {
   },
 };
 
-export default Home;
+export default NotFound;
